@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  min-height: 100vh;
+}
+
+.div1 {
+  grid-area: 1 / 1 / 6 / 2;
+  background: linear-gradient(-45deg, #a6d5df, #05a1c0);
+  box-shadow: inset 0 0 1em rgba(0, 0, 0, 0.555);
+}
+
+.div1 .banner {
+  background-image: url("../imagens/ong/banner.jpg");
+  border: 1px solid black;
+  border-bottom-left-radius: 35px;
+  border-bottom-right-radius: 35px;
+  box-shadow: 0 0 1em black;
+}
+
+.div1 .banner img {
+  margin-bottom: -3rem;
+  width: 100px;
+  border-radius: 50%;
+  margin-top: 2rem;
+  box-shadow: 0 0 1em black;
+}
+
+.div1 form {
+  padding: 1rem;
+}
+
+.div1 .nome-icon label {
+  display: block;
+  font-size: 35px;
+  margin-top: 1.5rem;
+  -webkit-text-stroke-width: 0.1px;
+  -webkit-text-stroke-color: #000;
+  font-size: 3.5em;
+  color: whitesmoke;
+}
+
+.div1 input[type="button"] {
+  cursor: pointer;
+  width: 100%;
+  height: 55px;
+  border: 1px solid black;
+  border-radius: 25px;
+  margin-top: 1rem;
+  font-size: 30px;
+  padding: 0.9rem;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 4px 3px 3px rgba(48, 48, 48, 0.514);
+}
+
+.div1 input[type="button"]:hover {
+  letter-spacing: 2px;
+  background: rgb(37, 42, 56);
+  color: whitesmoke;
+}
+
+.div1 .grid-icons {
+  border: 1px solid rgba(0, 0, 0, 0.205);
+  background: whitesmoke;
+  padding: 1rem;
+  margin-top: 2rem;
+  border-radius: 25px;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.582);
+}
+
+.div1 .grid-icons label {
+  font-size: 20px;
+}
+
+.div1 .grid-icons a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.div1 .icons {
+  margin-top: 0.8rem;
+  display: block;
+  transition: all 0.2s ease-in-out;
+  border-radius: 25px;
+  padding: 0.2rem;
+}
+
+.div1 .icons label {
+  cursor: pointer;
+}
+
+.div1 .icons:hover {
+  background: rgba(128, 128, 128, 0.432);
+}
+
+.div1 .icons img {
+  width: 30px;
+}
+
+.div2 {
+  grid-area: 1 / 2 / 6 / 5;
+  background-color: whitesmoke;
+  background-image: url("../imagens/paginaInicial/background.png");
+  border-top-left-radius: 20px;
+}
+
+.div2 h1 {
+  text-align: center;
+}
+
+.div2 .formulario {
+  background: whitesmoke;
+  border: 1px solid black;
+  width: 55%;
+  margin-left: 20%;
+  padding: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 1em black;
+}
+
+.div2 .formulario .form-group {
+  margin-top: 3rem;
+  margin-left: 8%;
+}
+
+.div2 .formulario label {
+  display: block;
+  margin-left: 2rem;
+  font-size: 20px;
+  margin-top: 0.8rem;
+}
+
+.div2 .formulario input {
+  width: 80%;
+  height: 16px;
+  margin-left: 2rem;
+  padding: 0.5rem;
+  font-size: 18px;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 4px 3px 3px rgba(48, 48, 48, 0.514);
+}
+
+.div2 .formulario select {
+  width: 83%;
+  height: 40px;
+  margin-left: 2rem;
+  padding: 0.5rem;
+  font-size: 18px;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 4px 3px 3px rgba(48, 48, 48, 0.514);
+}
+
+.div2 .botoes {
+  margin-top: 2rem;
+  margin-left: 6%;
+}
+
+.div2 .botoes .botao {
+  width: 70%;
+  cursor: pointer;
+  height: 45px;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  background: #1e1b24;
+  color: whitesmoke;
+  font-size: 20px;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+.div2 .botoes .botao:hover {
+  letter-spacing: 2px;
+  background: whitesmoke;
+  color: black;
+}
+
+.div2 .botoes .botao2 {
+  cursor: pointer;
+  width: 100px;
+  height: 42px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  margin-left: 0.6rem;
+  background: white;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+.div2 .botoes .botao2:hover {
+  transform: scale(105%, 105%);
+  letter-spacing: 2px;
+}
+

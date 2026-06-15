@@ -1,0 +1,321 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Port+Lligat+Sans&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Port Lligat Sans", sans-serif;
+  color: black;
+}
+
+
+/*Estrutura realizada com GRID para dividir entre textos informativos e formulários */
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  padding: 3rem;
+  background: linear-gradient(-45deg, #a6d5df, #418997);
+}
+
+ .img5{
+  height: 700px;
+}
+
+.img-6{
+margin-top: 32rem;
+height: 700px;
+margin-left: 8rem;
+opacity: 80%;
+}
+
+.div1 {
+  grid-row: 1 / 6;
+  grid-column: 1 / 4;
+  background: whitesmoke;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.div1 .container {
+  display: flex;
+  height: 100vh;
+}
+
+.div1 .container figure.avatar img {
+  position: absolute;
+}
+
+.div1 .container figure.avatar img.img4 {
+  padding: 2rem;
+}
+
+.div1 .container figure.avatar img.img1 {
+  margin-top: 18rem;
+  margin-left: 10rem;
+  width: 35%;
+}
+
+.div1 .container figure.avatar img.img2 {
+  margin-top: 25rem;
+  margin-left: 14rem;
+  width: 25%;
+}
+
+.div1 .container figure.avatar img.img3 {
+  margin-top: 32rem;
+  margin-left: 14rem;
+  width: 25%;
+}
+
+.div1 .container figure.avatar img.img5 {
+  margin-top: 40rem;
+  margin-left: 6rem;
+  width: 45%;
+  opacity: 80%;
+}
+
+.div2 {
+  grid-column: 4 / 6 ;
+  grid-row: 1 / 6;
+  background: whitesmoke;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+
+/*PARTE DE FORMULÁRIO REALIZADA*/
+
+
+
+.formulario {
+  background: whitesmoke;
+  padding: 2rem;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 0 0 1em black;
+  background-image: url("../imagens/formulario/fundobolinhas2.png");
+  background-repeat: no-repeat;
+  background-size: 600px;
+  background-position-x: -10px;
+  background-position-y: 120px;
+}
+
+.formulario .title {
+  margin-bottom: 2rem;
+}
+
+.formulario span.error {
+  display: flex;
+  padding: 0rem;
+  width: 70%;
+  font-size: 19px;
+  background-color: red;
+}
+
+.formulario span.error.active {
+  border: 1px solid orange;
+  padding: 0.4rem;
+}
+
+.formulario label {
+  display: block;
+}
+
+.formulario input {
+  position: relative;
+  width: 350px;
+  max-width: 100%;
+  padding: 0.4rem;
+  margin-top: 0.3rem;
+  margin-bottom: 0.9rem;
+  border-radius: 5px;
+  border: 1px solid #0d0f11;
+  box-shadow: 4px 3px 3px rgba(0, 0, 0, 0.349);
+  font-size: 18px;
+  transition: all 0.3s ease-in-out;
+}
+
+.formulario input:hover {
+  transform: scale(105%, 105%);
+}
+
+.formulario .cxNome label {
+  margin-right: 19.1rem !important;
+  font-size: 20px;
+  color: black;
+}
+
+.formulario .cx1 label {
+  margin-right: 12.1rem;
+  font-size: 20px;
+  color: black;
+}
+.formulario .cx2 label {
+  margin-right: 20.2rem;
+  font-size: 20px;
+  color: black;
+}
+.formulario .cx3 label {
+  margin-right: 20.8rem;
+  font-size: 20px;
+  color: black;
+}
+.formulario .cx4 label {
+  margin-right: 18.8rem;
+  font-size: 20px;
+  color: black;
+}
+.formulario .cx5 label {
+  margin-right: 18rem;
+  font-size: 20px;
+  color: black;
+}
+.formulario .cx6 label {
+  margin-right: 19rem;
+  font-size: 20px;
+  color: black;
+}
+.formulario .cx7 label {
+  margin-right: 13.6rem;
+  font-size: 20px;
+  color: black;
+}
+.formulario .cx8 label {
+  margin-right: 20rem;
+  font-size: 20px;
+  color: black;
+}
+.formulario .cx9 label {
+  margin-right: 20rem;
+  font-size: 20px;
+  color: black;
+}
+.formulario .cx10 label {
+  margin-right: 19rem;
+  font-size: 20px;
+  color: black;
+}
+.formulario .cx11 label {
+  margin-right: 16rem;
+  font-size: 20px;
+  color: black;
+}
+.formulario .cx12 label {
+  margin-right: 19rem;
+  font-size: 20px;
+  color: black;
+}
+.formulario .cx13 label {
+  margin-right: 18.6rem;
+  font-size: 20px;
+  color: black;
+}
+.formulario .cx14 label {
+  margin-right: 18.6rem;
+  font-size: 20px;
+  color: black;
+}
+
+.formulario .cx15 label {
+  margin-right: 17.6rem;
+  font-size: 20px;
+  color: black;
+}
+
+.formulario select {
+  width: 365px;
+  max-width: 100%;
+  padding: 0.4rem;
+  margin-top: 0.3rem;
+  margin-bottom: 0.9rem;
+  border-radius: 5px;
+  border: 1px solid #0d0f11;
+  box-shadow: 4px 3px 3px rgba(0, 0, 0, 0.349);
+  font-size: 18px;
+}
+
+.formulario .botao {
+  cursor: pointer;
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  border-radius: 25px;
+  font-size: 20px;
+  letter-spacing: 0.2rem;
+
+  background: #162635;
+  color: white;
+  transition: all 0.4s ease-in-out;
+}
+
+.formulario a{
+  width: 45%;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  margin-left: 25%;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  border-radius: 25px;
+  font-size: 20px;
+  letter-spacing: 0.2rem;
+
+  background: #162635;
+  color: white;
+  transition: all 0.4s ease-in-out;
+  border: 1px solid #162635 ;
+}
+
+.formulario .botao:hover, a:hover {
+  letter-spacing: 0.4rem;
+  background: rgba(245, 245, 245, 0.418);
+  color: black;
+}
+/*----------------------------------------------------------------*/
+
+/*RESPONSIVIDADE*/
+
+@media (max-width: 992px){
+  .div1{
+    display: none;
+  }
+
+  .div2{
+    grid-column: 1 / -1;
+  }
+
+  label{
+    white-space: nowrap;
+  }
+
+  .div2{
+    background: none;
+  border-radius: 20px;
+  }
+}
+
+@media (max-width: 1300px){
+  .img-6{
+    opacity:40%
+  }
+
+  .cx1 label, .cx4 label, .cx7 label{
+    text-wrap: nowrap;
+  }
+
+  
+}
+
+@media (min-width: 992px){
+   .formulario .voltar{
+    display: none;
+  }
+}

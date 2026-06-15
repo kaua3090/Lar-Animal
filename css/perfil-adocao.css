@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  min-height: 100vh;
+}
+
+body {
+  background: linear-gradient(-45deg, #0b559b, #043b81);
+}
+
+nav {
+  position: relative;
+  background: linear-gradient(-45deg, #0b559b, #043b81);
+  height: 70px;
+  z-index: -1;
+}
+
+:root {
+  --cor-fundo: #0b559b;
+  --cor-hover: #043b81;
+  --cor-primaria: rgb(231, 241, 236);
+}
+
+.div1 {
+  grid-area: 1 / 1 / 6 / 2;
+  background: linear-gradient(-45deg, #0b559b, #043b81);
+}
+
+.div1 .title {
+  background: whitesmoke;
+  border-radius: 30px;
+  width: 60%;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.div1 .foto-perfil {
+  width: 250px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.div1 .grid-icons {
+  border: 1px solid rgba(0, 0, 0, 0.205);
+  background: whitesmoke;
+  padding: 1rem;
+  margin-top: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border-radius: 25px;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.582);
+}
+
+.div1 .grid-icons a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.div1 .icons {
+  margin-top: 0.8rem;
+  display: block;
+  transition: all 0.2s ease-in-out;
+  border-radius: 25px;
+  padding: 0.2rem;
+}
+
+.div1 .icons label {
+  cursor: pointer;
+}
+
+.div1 .icons:hover {
+  background: rgba(128, 128, 128, 0.432);
+}
+
+.div1 .icons img {
+  width: 30px;
+}
+
+.div2 {
+  grid-area: 1 / 2 / 6 / 5;
+  background-color: whitesmoke;
+  background-image: url("../imagens/paginaInicial/background.png");
+  border-top-left-radius: 20px;
+  padding: 5rem;
+}
+
+.div2 h1 {
+  background: #0b48b9;
+  color: white;
+  width: 50%;
+  border: 1px solid black;
+  border-radius: 35px;
+  margin-bottom: 1rem;
+  padding: 0.2rem;
+}
+
+.div2 .fundo {
+  background: linear-gradient(-45deg, rgb(243, 240, 255), whitesmoke);
+  border: 2px solid rgb(88, 88, 88);
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.582);
+}
+
+.div2 .card-group {
+  display: block;
+}
+
+.div2 .card {
+  display: flex;
+  background: #043b81;
+  width: 90%;
+  min-width: 150px;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin-left: 2rem;
+  margin-top: 3rem;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.582);
+}
+
+.div2 .card .carimbo {
+  position: absolute;
+  width: 22%;
+  opacity: 80%;
+}
+
+.div2 .card img {
+  padding: 1rem;
+  width: 40%;
+  height: 320px;
+  border-radius: 30px;
+}
+
+.div2 .card .dados {
+  background: whitesmoke;
+  padding: 1rem;
+  width: 100%;
+  margin: 1rem 1rem 1rem 1rem;
+  border-radius: 10px;
+}
+
+.div2 .card .dados label {
+  font-size: 20px;
+  margin-top: 0.2rem;
+  font-weight: bold;
+}
+
+.div2 .card label {
+  display: block;
+}
+.div2 form .botao {
+  cursor: pointer;
+  width: 50%;
+  margin-top: 3rem;
+  padding: 0.5rem;
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  border: 1px solid black;
+  border-radius: 30px;
+  background: #4e465a;
+  color: white;
+  transition: all 0.5s ease-in-out;
+}
+
+.div2 form .botao:hover {
+  transform: scale(102%, 102%);
+  background: #043b81;
+}

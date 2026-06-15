@@ -1,0 +1,101 @@
+.div2 {
+  grid-area: 1 / 2 / 6 / 5;
+  background-color: whitesmoke;
+  background-image: url("../imagens/paginaInicial/background.png");
+  border-top-left-radius: 20px;
+}
+
+.div2 h1 {
+  margin-left: 5%;
+  margin-bottom: 2rem;
+}
+
+.div2 .formulario {
+  background: whitesmoke;
+  border: 1px solid black;
+  width: 55%;
+  margin-left: 25%;
+  padding: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 1em black;
+}
+
+.div2 .formulario label {
+  display: block;
+  margin-left: 2rem;
+  margin-top: 0.5rem;
+  font-size: 18px;
+}
+
+.div2 .formulario input {
+  width: 70%;
+  height: 15px;
+  margin-left: 2rem;
+  padding: 0.5rem;
+  letter-spacing: 0.8px;
+  font-size: 18px;
+  font-weight: bold;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 4px 3px 3px rgba(24, 24, 24, 0.363);
+}
+
+.div2 .formulario select {
+  width: 73%;
+  height: 40px;
+  margin-left: 2rem;
+  padding: 0.5rem;
+  font-size: 18px;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 4px 3px 3px rgba(24, 24, 24, 0.363);
+}
+
+.div2 .botao button{
+  width: 50%;
+}
+
+.div2 .botoes {
+  margin-top: 2rem;
+  margin-left: 0%;
+}
+
+.div2 .botoes .botao {
+  cursor: pointer;
+  height: 45px;
+  width: 60%;
+  margin-left: 4%;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  background: #1e1b24;
+  color: whitesmoke;
+  font-size: 20px;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+.div2 .botoes .botao:hover {
+  letter-spacing: 2px;
+  background: whitesmoke;
+  color: black;
+}
+
+.div2 .botoes .botao2 {
+  cursor: pointer;
+  width: 100px;
+  height: 45px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  margin-left: 0.6rem;
+  background: white;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+.div2 .botoes .botao2:hover {
+  letter-spacing: 2px;
+}

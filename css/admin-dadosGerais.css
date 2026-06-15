@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  min-height: 100vh;
+}
+
+body {
+  background: linear-gradient(-45deg, rgb(8, 118, 192), rgb(7, 60, 109));
+}
+
+
+
+.espacamento {
+  display: flex;
+}
+
+.espacamento name {
+  margin-left: 10px;
+  margin-top: 3px;
+}
+
+.div1 {
+  grid-area: 1 / 1 / 6 / 2;
+  background: linear-gradient(-45deg, rgb(13, 136, 218), rgb(24, 68, 150));
+}
+
+.div1 .title {
+  background: whitesmoke;
+  border-radius: 30px;
+  width: 60%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.div1 .foto-perfil {
+  width: 250px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.div1 .grid-icons {
+  border: 1px solid rgba(0, 0, 0, 0.205);
+  background: whitesmoke;
+  padding: 1rem;
+  margin-top: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border-radius: 25px;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.582);
+}
+
+.div1 .icons {
+  margin-top: 0.8rem;
+  display: block;
+  transition: all 0.2s ease-in-out;
+  border-radius: 25px;
+  padding: 0.2rem;
+}
+
+.div1 .icons label {
+  cursor: pointer;
+}
+
+.div1 .grid-icons a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.div1 .icons:hover {
+  background: rgba(128, 128, 128, 0.432);
+}
+
+.div1 .icons img {
+  width: 30px;
+}
+
+.div2 {
+  grid-area: 1 / 2 / 6 / 5;
+  background-color: whitesmoke;
+  background-image: url("../imagens/paginaInicial/background.png");
+  border-top-left-radius: 20px;
+}
+
+.conteudo {
+  display: flex;
+  /* max-width: 100%; */
+  min-inline-size: 90%;
+  background: whitesmoke;
+  border: 2px solid black;
+  border-radius: 15px;
+  padding: 1rem;
+  margin: 2rem;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.conteudo .tabelas {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 1rem;
+  width: 100%;
+  background: rgb(170, 217, 255);
+  margin-bottom: 2rem;
+  table-layout: fixed;
+  width: 100%;  
+}
+
+.colunas {
+  font-weight: bold;
+}
+
+.colunas{
+  min-block-size: 100%;
+}
+
+.conteudo .tabelas td {
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 1.2vw;
+  text-align: center;
+  background: white;
+  word-wrap: break-word;  
+}
+
+
+
+
+
+/*RESPONSIVIDADE*/
+
+@media (max-width: 992px){
+  .conteudo .tabelas td {
+    font-size: 1.7vw;
+  }
+
+  .foto img{
+    display: none;
+  }
+
+  td:nth-child(8){
+    display: none;
+  }
+
+  .foto-perfil{
+    max-width: 70%;
+  } 
+
+  .div2 .conteudo{
+      min-inline-size: 50%;
+  }
+
+}
+
+@media (max-width: 768px){
+  .conteudo .tabelas td {
+    font-size: 2.0vw;
+  }
+
+
+}
+
+  @media (max-width: 600px){
+  .conteudo .tabelas td {
+    font-size: 2.4vw;
+  }
+
+  }

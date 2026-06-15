@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  min-height: 140vh;
+}
+
+.div1 {
+  grid-area: 1 / 1 / 6 / 3;
+  background: linear-gradient(45deg, #343a40, #162635);
+  border: 1px solid black;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 0 0 1rem black;
+}
+
+.div2 {
+  grid-area: 1 / 3 / 6 / 6;
+  background-image: url("../imagens/paginaInicial/background.png");
+}
+
+.div1 .container {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background: #f2f2f2;
+}
+
+.imagem {
+  border: 4px solid rgba(0, 0, 0, 0.767);
+  border-radius: 10px;
+  margin-left: 24%;
+  margin-top: 8%;
+  width: 250px;
+  max-width: 100%;
+  height: 250px;
+  max-height: 100%;
+  box-shadow: 0 0 1rem black;
+}
+
+.div1 label {
+  display: block;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 1rem;
+  padding: 1.1rem;
+  max-width: 100%;
+  padding: 0.5rem;
+  box-shadow: 5px 2px 2px rgb(146, 146, 146);
+  color: black;
+  background: white;
+  font-size: 18px;
+  /* font-weight: bold; */
+  border: 2px solid #2f4659;
+  border-radius: 8px;
+  margin-top: 0.8rem;
+}
+
+.div1 .nota {
+  border: none;
+  text-decoration: underline;
+  font-size: 15px;
+}
+
+/* Pagina da ONG */
+
+.maps {
+  width: 80%;
+  max-width: 100%;
+  height: 25%;
+  max-height: 100%;
+  display: inline-flex;
+  border: 2px solid black;
+  margin-left: 10%;
+}
+
+.div2 h2 {
+  display: inline-flex;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 10%;
+  padding: 0.4rem;
+
+  background: #192530;
+  border: 2px solid #2f4659;
+  border-radius: 35px;
+}
+
+.div2 .container2 {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(45deg, #e5e6e7, #eaeef1);
+}
+
+.div2 label {
+  display: list-item;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 1rem;
+  max-width: 100%;
+  color: black;
+  background: white;
+  font-size: 18px;
+  padding: 0.5rem;
+  /* font-weight: bold; */
+  border: 1px solid #2f4659;
+  border-radius: 8px;
+  margin-top: 1rem;
+  box-shadow: 5px 2px 2px rgb(146, 146, 146);
+}
+
+.botao {
+  cursor: pointer;
+  width: 50%;
+  margin-left: 10%;
+  padding: 0.8rem;
+  border: 1px solid rgba(0, 0, 0, 0.637);
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  box-shadow: 0px 2px rgb(146, 146, 146);
+  margin-top: 1rem;
+  background: #eaeef1;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.botao:hover {
+  letter-spacing: 1rem;
+  background: #1d2b36;
+  color: whitesmoke;
+}
+
+.botao2 {
+  cursor: pointer;
+  width: 30%;
+  padding: 0.8rem;
+  border: 1px solid rgba(0, 0, 0, 0.637);
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  box-shadow: 0px 2px rgb(146, 146, 146);
+  margin-top: 1rem;
+  background: #eaeef1;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.botao2:hover {
+  letter-spacing: 1rem;
+  background: #1d2b36;
+  color: whitesmoke;
+}
